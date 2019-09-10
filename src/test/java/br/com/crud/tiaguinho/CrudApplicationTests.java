@@ -1,4 +1,4 @@
-package com.crud.crud;
+package br.com.crud.tiaguinho;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

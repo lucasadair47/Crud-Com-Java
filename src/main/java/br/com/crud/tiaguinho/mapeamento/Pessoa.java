@@ -1,10 +1,7 @@
-package com.mapeamento;
+package br.com.crud.tiaguinho.mapeamento;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,8 +9,6 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@RestController
-@RequestMapping(value="/PESSOAS")
 public class Pessoa {
 	
 	 @Id
@@ -21,6 +16,14 @@ public class Pessoa {
      private String nome; 
      private String dataNascimento;
      private String telefone;
+     
+	public Pessoa(long id, String nome, String dataNascimento, String telefone) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.dataNascimento = dataNascimento;
+		this.telefone = telefone;
+	}
      
      
      
