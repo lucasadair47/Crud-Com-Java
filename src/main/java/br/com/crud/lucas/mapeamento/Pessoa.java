@@ -1,4 +1,4 @@
-package br.com.crud.tiaguinho.mapeamento;
+package br.com.crud.lucas.mapeamento;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -24,6 +24,8 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 		this.telefone = telefone;
 	}
+     
+   
      
      
      

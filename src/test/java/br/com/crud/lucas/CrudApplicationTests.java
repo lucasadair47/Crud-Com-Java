@@ -1,4 +1,4 @@
-package br.com.crud.tiaguinho;
+package br.com.crud.lucas;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
