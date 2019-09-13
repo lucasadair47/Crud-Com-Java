@@ -1,32 +1,28 @@
 package br.com.crud.lucas.mapeamento;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-public class Pessoa {
+@NoArgsConstructor
+public class Pessoa implements Serializable {
+	private static final long serialVersionUID = 1L;
 	
 	 @Id
+	 @GeneratedValue(strategy=GenerationType.IDENTITY)
 	 long id;
      private String nome; 
      private String dataNascimento;
      private String telefone;
-     
-	public Pessoa(long id, String nome, String dataNascimento, String telefone) {
-		super();
-		this.id = id;
-		this.nome = nome;
-		this.dataNascimento = dataNascimento;
-		this.telefone = telefone;
-	}
-     
-   
-     
-     
      
 }
